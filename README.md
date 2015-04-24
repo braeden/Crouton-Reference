@@ -1,5 +1,5 @@
 # Crouton-Reference
-To enter crouton from crosh = sudo startxfce4
+
 
 ###To Update Crouton
 ------------------
