@@ -61,7 +61,7 @@ if `sudo startxfce4` results in error
 -------------------
 `sudo startxfce4 -n precise -t xfce,keyboard,xorg`
 
-####RENAME CHROOT
+####Rename Chroot
 -------------------
 `sudo edit-chroot -m <newname> <oldname>`
 
