@@ -1,7 +1,7 @@
 # Crouton-Reference
 
 
-###To Update Crouton
+####To Update Crouton
 ------------------
 Download latest chroot-http://goo.gl/fd3zc
 
@@ -11,67 +11,67 @@ Press CTRL-ALT-T
 
 `sudo sh ~/Downloads/crouton -u -n precise (or other chroot, trusty, raring etc.)`
 
-###Startxfce4 Error
+####Startxfce4 Error
 -------------------
 if `sudo startxfce4` results in error
 
 `sudo enter-chroot` = enter the terminal of chroot w/o launching GUI
 
-###Force Chroot Unmount
+####Force Chroot Unmount
 -------------------
 `sudo unmount-chroot -a -f`
 
-#####Failed to Unmount
+######Failed to Unmount
 -------------------
 `y` to send SIGTERM to mount processes
 
-###Update Ubuntu Release
+####Update Ubuntu Release
 -------------------
 [Solution](https://github.com/dnschneid/crouton/wiki/Upgrade-chroot-release)
 
-###To Backup as .tar
+####To Backup as .tar
 -------------------
 `sudo edit-chroot -b chrootname`
 
-###To Restore with an Existing Install
+####To Restore with an Existing Install
 -------------------
 `sudo edit-chroot -r chrootname`
 
-###To Restore from New
+####To Restore from New
 -------------------
 `sudo sh ~/Downloads/crouton -f mybackup.tar.gz`
 
-###List All Chroots and Info
+####List All Chroots and Info
 -------------------
 `sudo edit-chroot -al`
 
-###Fix freon error
+####Fix freon error
 -------------------
 `sudo CROUTON_BRANCH=x11_freon sh ~/Downloads/crouton -t xfce -n precise -u`
 
-###Reinstall xorg Server
+####Reinstall xorg Server
 -------------------
 `sudo apt-get install --reinstall xserver-xorg-coresudo apt-get install --reinstall xserver-xorg-core`
 
-###Cycle Mount of Chroot
+####Cycle Mount of Chroot
 -------------------
 `sudo enter-chroot croutoncycle next`
 
-###Only Start Chroot if it Contians Viable Packages
+####Only Start Chroot if it Contians Viable Packages
 -------------------
 `sudo startxfce4 -n precise -t xfce,keyboard,xorg`
 
-###RENAME CHROOT
+####RENAME CHROOT
 -------------------
 `sudo edit-chroot -m <newname> <oldname>`
 
-###Fix DPKG Error 'dpkg: error processing package' after trusty update
+####Fix DPKG Error 'dpkg: error processing package' after trusty update
 -------------------
 `sudo dpkg --purge -a`
 `sudo apt-get update`
 `sudo apt-get -f install`
 
-###Update Unable to Connect to Precise Server
+####Update Unable to Connect to Precise Server
 -------------------
 Error: "`requesting key 142986CE from hkp server keyserver.ubuntu.com`"
 
